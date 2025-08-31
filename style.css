@@ -10,6 +10,11 @@ Version: 1.0
 
 /* Put your custom CSS below this line */
 
+/* TEST: Make background hot pink to verify style.css is loading */
+body {
+  background: hotpink !important;
+}
+
 /* Navbar base styles */
 .navbar {
   width: 100%;
