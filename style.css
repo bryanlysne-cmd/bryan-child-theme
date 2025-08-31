@@ -9,3 +9,87 @@ Version: 1.0
 */
 
 /* Put your custom CSS below this line */
+
+/* Navbar base styles */
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  flex: 1;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.collapse.navbar-collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-nav li {
+  margin-right: 1.5rem;
+}
+
+.navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+/* Responsive styles for tablet and smaller */
+@media (max-width: 1024px) {
+  .navbar-toggle {
+    display: block;
+  }
+  .collapse.navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 999;
+    border-bottom: 1px solid #eee;
+  }
+  .collapse.navbar-collapse.open {
+    display: flex;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .navbar-nav li {
+    margin: 0.75rem 0;
+    width: 100%;
+    text-align: center;
+  }
+}
